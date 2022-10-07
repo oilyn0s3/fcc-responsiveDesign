@@ -21,4 +21,27 @@ This can be done by dividing the document/layout into various segments using:
     <figcaption>An elephant at sunset</figcaption>
 </figure>
 ```
+- `<form>` tag and it's example use: 
+```html
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+    <fieldset>
+        <legend>Is your cat an indoor or outdoor cat?</legend>
+        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+    </fieldset>
+    <fieldset>
+        <legend>What's your cat's personality?</legend>
+        <input id="loving" type="checkbox" name="personality" value="loving" checked> <label
+            for="loving">Loving</label>
+        <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+        <input id="energetic" type="checkbox" name="personality" value="energetic"> <label
+            for="energetic">Energetic</label>
+    </fieldset>
+    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+</form>
+<!-- snippet from Cat Photo App -->
+ ```
+  - `<fieldset>` defines a section of form which can contain multiple inputs and labels.
+  - `<label>` is used to associate it with an `<input>` element, we need to give the `<input>` an `id` attribute. The `<label>` then needs a `for` attribute whose value is the same as the input's `id`. Alternatively, we can nest the `<input>` directly inside the `<label>`, in which case the `for` and `id` attributes are not needed because the association is implicit. An example is shown above.  **The `<label>` tag improves accessibility.**
 
