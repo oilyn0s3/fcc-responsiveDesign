@@ -14,7 +14,7 @@ This can be done by dividing the document/layout into various segments using:
 - `<article>` element represents a self-contained composition in a page, which is intended to be independently distributable or reusable. Examples include: a forum post, a magazine or newspaper article, or a blog entry or any other independent item of content.  
 - `<figure>` element represents self-contained content, potentially with an optional caption, which is specified using the `<figcaption>` element. The figure, its caption, and its contents are referenced as a single unit.
   eg:
-  ```html
+```html
 <figure>
     <img src="/media/cc0-images/elephant-660-480.jpg"
          alt="Elephant at sunset">
